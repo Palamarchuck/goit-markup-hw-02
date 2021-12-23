@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --main-background-color: #e5e5e5;
   --second-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
 }
 body {
   font-family: "Roboto", "sans-serif";
@@ -26,6 +27,9 @@ body {
 .header-tel:focus {
   color: var(--accent-color);
 }
+.header {
+  background-color: var(--second-title-text-color);
+}
 
 .list {
   list-style: none;
@@ -35,18 +39,26 @@ body {
 }
 .header-logo {
   font-family: "Raleway", "sans-serif";
-  font-style: 700;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--header-text-color);
+  text-decoration: none;
 }
 .logo-first {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-list {
-  font-style: medium;
+  font-weight: 500;
   line-height: 1.14;
   vertical-align: top;
+  letter-spacing: 0.02em;
+}
+.header-link {
+  color: var(--header-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .current {
@@ -54,91 +66,89 @@ body {
 }
 .header-mail,
 .header-tel {
-  font-style: medium;
+  font-weight: 500;
   line-height: 1.14;
-  vertical-align: top;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 /* ----------HERO---------- */
 .hero {
-  font-style: var(--second-background-color);
-  font-size: 44px;
-  line-height: 1.36;
-  align: center;
-  vertical-align: top;
-  letter-spacing: 0.06em;
   background-color: var(--second-background-color);
-  color: var(--second-title-text-color);
-  text-transform: uppercase;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
 }
 .hero-btn {
+  display: inline-block;
   cursor: pointer;
-  font-style: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align: center;
-  vertical-align: center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--second-title-text-color);
   background-color: var(--accent-color);
+}
+.hero-title {
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--second-title-text-color);
 }
 
 /* ----------METHODS---------- */
 
 .methods-title {
-  font-style: bold;
+  font-weight: 700;
   line-height: 1.14;
-  align: left;
+  text-align: left;
   vertical-align: top;
 }
 .methods-after-title {
-  font-style: regular;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
-  align: left;
-  vertical-align: top;
+  text-align: left;
   color: var(--title-text-color);
 }
 /* ----------ABOUT---------- */
 .about-title {
-  font-style: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  align: center;
-  vertical-align: top;
+  text-align: center;
 }
 .team-pre-title {
-  font-style: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  align: center;
-  vertical-align: top;
+  text-align: center;
 }
 .team-title {
-  font-style: medium;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  align: center;
-  vertical-align: top;
+  text-align: center;
 }
 .team-after-title {
-  font-style: regular;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  align: center;
-  vertical-align: top;
+  text-align: center;
   color: var(--title-text-color);
 }
 /* ----------FOOTER---------- */
 .footer-logo {
   font-family: raleway;
-  font-style: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  align: left;
-  vertical-align: top;
+  text-align: center;
   color: var(--second-title-text-color);
+  text-decoration: none;
 }
 .footer {
   background-color: var(--second-background-color);
@@ -147,8 +157,7 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.72;
-  align: left;
-  vertical-align: top;
+  text-align: center;
   color: var(--second-title-text-color);
 }
 
@@ -156,8 +165,8 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.72;
-  align: left;
-  vertical-align: top;
+  text-align: left;
+
   color: rgba(255, 255, 255, 0.6);
 }
 .adress-mail:hover {
@@ -167,8 +176,7 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.72;
-  align: left;
-  vertical-align: top;
+  text-align: left;
   color: rgba(255, 255, 255, 0.6);
 }
 .adress-tel:hover {
@@ -186,31 +194,30 @@ body {
   cursor: pointer;
 }
 .filter-btn {
-  font-style: medium;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  align: center;
-  vertical-align: top;
+  text-align: center;
   color: var(--header-text-color);
+  background-color: var(--third-background-color);
+  letter-spacing: 0.03em;
 }
 .filter-btn-first {
   background-color: var(--accent-color);
   color: var(--second-title-text-color);
 }
 .projects-title {
-  font-style: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  align: left;
-  vertical-align: top;
+  text-align: left;
   letter-spacing: 0.06em;
   color: var(--header-text-color);
 }
 .projects-after-title {
-  font-style: regular;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  align: left;
-  vertical-align: top;
+  text-align: left;
   color: var(--title-text-color);
 }
