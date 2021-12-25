@@ -42,6 +42,9 @@ ul {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -112,7 +115,7 @@ button {
 .hero {
   background-color: var(--second-background-color);
   padding-top: 200px;
-  padding-bottom: 210px;
+  padding-bottom: 200px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -147,12 +150,15 @@ button {
 }
 
 /* ----------METHODS---------- */
-
+.methods-list {
+  padding-top: 94px;
+}
 .methods-title {
   font-weight: 700;
   line-height: 1.14;
   text-align: left;
   vertical-align: top;
+  margin-bottom: 10px;
 }
 .methods-after-title {
   font-weight: 400;
@@ -162,23 +168,34 @@ button {
   color: var(--title-text-color);
 }
 /* ----------ABOUT---------- */
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .about-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+.team {
+  padding-top: 94px;
 }
 .team-pre-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-after-title {
   font-weight: 400;
@@ -186,6 +203,7 @@ button {
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color);
+  margin-bottom: 30px;
 }
 /* ----------FOOTER---------- */
 .footer-logo {
@@ -199,6 +217,9 @@ button {
 }
 .footer {
   background-color: var(--second-background-color);
+  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .adress-first {
   font-style: normal;
